@@ -176,8 +176,6 @@ public class Combat : MonoBehaviour{
                 //All enemies are dead: Change to the "Win Screen".
                 if (enemyCount == 1){
                     player.CombatsWon++;
-                    player.AddExp(25);          // Give EXP for winning the battle
-                    player.Gold += 15;          // Give Gold for winning the battle
                     player.HidePlayer();
                     SceneManager.LoadScene("DemoWinScreen");
                 }
